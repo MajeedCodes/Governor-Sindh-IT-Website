@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: "Poppins", sans-serif;
+ margin: 0;
+ padding: 0;
+}
+.backmy{
+  background-image: url("/images/back.jpg");
+  opacity: 0.2;
+  background-size: cover;
+
+}
+
+.backmy::before {
+  content: "";
+  inset: 0;
+  background-image: url("/images/back.jpg");
+  background-size: cover;
+  z-index: -1;
+}
+
+
+
+
+@media only screen and  (min-width:1100px) {
+  .program{
+    display: none;
+  }
+}
+
+@media only screen and  (max-width:1100px) {
+  .mainHead{
+    display: none;
+  }
+}
+
+@media only screen and  (max-width:710px) {
+  .togle{
+    display: block;
+    
+    }
+  .list{
+    display: none;
+  }
+}
+
+
+@media only screen and  (max-width:840px) {
+  
+  .mainmy{
+
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+@media only screen and  (max-width:450px) {
+  .program{
+    font-size: 15px;
+    margin-top: 15px;
+  }
+  .jobs{
+    font-size: 25px;
+    text-align: center;
+  }
+}
